@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from 3.0</title>
+    <style>
+        form{
+            width: 25%;
+            height: 250px;
+        }
+        h2{
+            margin-top: 0;
+            height: 30px;
+        }
+        p{
+            width: 100%;
+            line-height: 5px;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        #submit{
+           float: right;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<form action="/login" method="post">
+
+    <table>
+        <legend>
+            <fieldset><h2>注册</h2>
+                <p>
+                用户：
+                {{ form.username }}
+                <p>
+                邮箱：
+                {{ form.email }}
+                <p >
+                {{ form.submit }}
+            </fieldset>
+        </legend>
+    </table>
+
+</form>
+</body>
+</html>

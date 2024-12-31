@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+hello world
+<br>
+{{data}}
+<br>
+{{data['name']}}
+<br>
+{{data.age}}{{data['age']}}
+<br>
+{{data.list}}
+<br>
+{{data.list[2]}}
+<br>
+{{data.list[1] + data.list[3]}}
+<br>
+{{ 'hello world' | upper}}
+<br>
+{{ 'hello world' | title}}
+<br>
+{{'hello world' | replace('hello','hi')}}
+<br>
+{{ mytime }}
+<br>
+{{ mytime |dformat }}
+<br>
+{% if age2 < 18 %}
+yo 小子what are you doing ?
+<br>
+Are you want to play litter friend !
+{% else %}
+{% endif %}
+OK!
+<br>
+{%for book in books %}
+<p>书名：{{book.name}} ,作者：{{book.author}}</p>
+{% endfor %}
+</body>
+</html>
